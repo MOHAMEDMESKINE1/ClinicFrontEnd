@@ -79,7 +79,7 @@ function AppointementMail(){
     }
   
 }
-//Contact
+// //Contact
 // function NewContact(){
 //   var emailParams = {
 //       firstname : document.getElementById('firstname').value,
@@ -90,7 +90,7 @@ function AppointementMail(){
      
 //   }
 
-//   const serviceId = "service_xq2fu38";
+//   const serviceId = "service_8bdwssu";
 //   const templateId = "template_eiswzeu";
 
 //   if(emailParams ==="") {
@@ -138,5 +138,8 @@ const btnMap = document.getElementById("btn-map");
 const darkMap = document.getElementById("map");
 
 btnMap.addEventListener('click',()=>{
-  darkMap.classList.toggle('dark')
+  
+    darkMap.classList.toggle('dark')
+
+  
 })
