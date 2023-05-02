@@ -20,7 +20,11 @@
         font-family: 'Poppins', sans-serif;
     }
     </style>
+ <!-- animate css-->
+
+ <link rel="stylesheet" href="../css/animate.css">
  
+ <!-- animate css-->
 </head>
 <body >
     <!-- navbar -->
@@ -85,7 +89,7 @@
   <!-- navbar -->
     <section id="clients" class="bg-cyan-50" >
       <div class="flex flex-col pt-5 items-center text-cyan-800 mx-auto">
-          <h1 class="text-center text-4xl text-cyan-800  font-bold mt-20 ">Our Team</h1>
+          <h1 class="text-center text-4xl text-cyan-800  font-bold mt-20  wow bounce" data-wow-duration="3s" data-wow-delay=".2s">Our Team</h1>
           <h3 class="text-center "> <a href="../index.html">Home</a> / <a href="./ourteam.html">Team</a></h3>
       </div>
      
@@ -253,6 +257,11 @@
  
 </footer>
 <!-- footer -->
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
 <script src="../js/jquery.min.js"></script>
 <script src="../js/script.js"></script>
 <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>

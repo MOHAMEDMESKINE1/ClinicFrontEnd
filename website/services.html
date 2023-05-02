@@ -20,7 +20,11 @@
         font-family: 'Poppins', sans-serif;
     }
     </style>
+ <!-- animate css-->
+
+ <link rel="stylesheet" href="../css/animate.css">
  
+ <!-- animate css-->
 </head>
 <body>
         <!-- navbar -->
@@ -87,7 +91,7 @@
     <section class="  bg-cyan-50 p-5">
         <section class="mb-32  text-center">
     
-            <h2 class="text-4xl font-bold mb-4 text-cyan-800 mt-20">Services</h2>
+            <h2 class="text-4xl font-bold mb-4 text-cyan-800 mt-20 wow bounce" data-wow-duration="3s" data-wow-delay=".2s">Services</h2>
             <h3 class="text-center text-cyan-800"> <a href="../index.html">Home</a> / <a href="./services.html">Services</a></h3>
             <div class="grid md:grid-cols-3 gap-x-4 gap-y-4 xl:gap-x-12 mt-5">
                     <!-- service 1 -->
@@ -211,6 +215,11 @@
    
   </footer>
   <!-- footer -->
+  <script src="../js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+
   <script src="../js/jquery.min.js"></script>
 
   <script src="../js/script.js"></script>
