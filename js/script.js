@@ -38,7 +38,8 @@ function Subscriber(){
     const templateId = "template_c2d5y6h";
 
 
-    emailjs.send(serviceId, templateId,emailParams)
+    if(emailParams.email !==""){
+      emailjs.send(serviceId, templateId,emailParams)
         .then(response=> {
             document.getElementById('email').value =""
             alert('email sent succcefully !');
@@ -46,6 +47,9 @@ function Subscriber(){
             console.log('FAILED...', error);
 
         });
+    }else{
+      alert('please fill the field')
+    }
 }
 // appointement 
 function AppointementMail(){
@@ -61,57 +65,63 @@ function AppointementMail(){
     const serviceId = "service_xq2fu38";
     const templateId = "template_eiswzeu";
 
-    if(emailParams ==="") {
+    if(emailParams.firstname !=="" && emailParams.lastname !==""   
+    && emailParams.email !==""  && emailParams.doctor !==""  && emailParams.date !=="" ) {
     
-      alert("Please fill out the fields ");
+      emailjs.send(serviceId, templateId,emailParams)
+      .then(response=> {
+          document.getElementById('email').value =""
+          document.getElementById('firstname').value =""
+          document.getElementById('lastname').value =""
+
+          console.log(response.status + " \n" + response.text);
+          alert('Appointemet has been set succcefully !');
+         
+        
+
+      }).catch(error => {
+          console.log('FAILED...', error);
+
+      });
     }else{
-        emailjs.send(serviceId, templateId,emailParams)
-        .then(response=> {
-            document.getElementById('email').value =""
-            document.getElementById('firstname').value =""
-            document.getElementById('lastname').value =""
+      alert("Please fill out the fields ");
 
-            console.log(response.status + " \n" + response.text);
-            alert('Appointemet has been set succcefully !');
-        }).catch(error => {
-            console.log('FAILED...', error);
-
-        });
     }
   
 }
-// //Contact
+// // //Contact
 // function NewContact(){
-//   var emailParams = {
-//       firstname : document.getElementById('firstname').value,
-//       lastname : document.getElementById('lastname').value,
-//       email : document.getElementById('email').value,
-//       doctor : document.getElementById('doctor').value,
-//       date : document.getElementById('date').value,
+//   // var emailParams = {
+//   //     firstname : document.getElementById('firstname').value,
+//   //     lastname : document.getElementById('lastname').value,
+//   //     email : document.getElementById('email').value,
+//   //     doctor : document.getElementById('doctor').value,
+//   //     date : document.getElementById('date').value,
      
-//   }
+//   // }
 
-//   const serviceId = "service_8bdwssu";
-//   const templateId = "template_eiswzeu";
+//   // const serviceId = "service_8bdwssu";
+//   // const templateId = "template_eiswzeu";
 
-//   if(emailParams ==="") {
+//   // if(emailParams ==="") {
   
-//     alert("Please fill out the fields ");
-//   }else{
-//       emailjs.send(serviceId, templateId,emailParams)
-//       .then(response=> {
-//           document.getElementById('email').value =""
-//           document.getElementById('firstname').value =""
-//           document.getElementById('lastname').value =""
+//   //   alert("Please fill out the fields ");
+//   // }else{
+//   //     emailjs.send(serviceId, templateId,emailParams)
+//   //     .then(response=> {
+//   //         document.getElementById('email').value =""
+//   //         document.getElementById('firstname').value =""
+//   //         document.getElementById('lastname').value =""
 
-//           console.log(response.status + " \n" + response.text);
-//           alert('Appointemet has been set succcefully !');
-//       }).catch(error => {
-//           console.log('FAILED...', error);
+//   //         console.log(response.status + " \n" + response.text);
+//   //         alert('Appointemet has been set succcefully !');
+//   //     }).catch(error => {
+//   //         console.log('FAILED...', error);
 
-//       });
-//   }
-
+//   //     });
+//   // }
+//   // window.location.href = '../website/thankyou.html';
+//   // alert('thank you')
 // }
 
 // scroll top

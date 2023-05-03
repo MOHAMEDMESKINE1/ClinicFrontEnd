@@ -47,9 +47,9 @@
 
 
 </head>
-<body class="w-full">
+<body>
     <!-- navbar -->
-    <nav class="bg-white   border-gray-200 dark:bg-cyan-50 nav  fixed w-full z-20 top-0 left-0  ">
+    <nav class="bg-white   border-gray-200 dark:bg-cyan-50   fixed w-full z-20 top-0 left-0 nav ">
       <div class=" flex flex-wrap items-center justify-between mx-auto p-4  ">
         <a href="#home" class="flex items-center">
             <img src="./img/logo-hoptial.svg" class="h-10 w-10 mx-5 " alt="Flowbite Logo" />
@@ -58,7 +58,7 @@
 
         <div class="flex md:order-2">
           <a href="#login"  class="text-white hidden lg:block md:block sm:hidden bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-full  text-sm px-6 p-3 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">Login</a>
-          <a href="#appointement" type="button" class="text-white mx-2 hidden lg:block md:block sm:hidden bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-full  text-sm px-6 p-3 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">Make Appointement</a>
+          <a href="./website/appointement.html" type="button" class="text-white mx-2 hidden lg:block md:block sm:hidden bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-full  text-sm px-6 p-3 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">Make Appointement</a>
 
             <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-cyan-500 hover:bg-cyan-900 dark:focus:ring-cyan-50" aria-controls="navbar-cta" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
@@ -69,7 +69,7 @@
         <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
           <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0   ">
             <li>
-              <a href="#home" class="block py-2 pl-3 pr-4 text-white bg-cyan-700 rounded md:bg-transparent md:text-cyan-700 md:p-0 md:dark:text-cyan-700" aria-current="page">Home</a>
+              <a href="/index.html" class="block py-2 pl-3 pr-4 text-white bg-cyan-700 rounded md:bg-transparent md:text-cyan-700 md:p-0 md:dark:text-cyan-700" aria-current="page">Home</a>
             </li>
           
             <li>
@@ -175,7 +175,7 @@
               alt="hero"
               class="max-w-full hidden md:block  rounded-lg lg:ml-auto"
             />
-            <span class="absolute -left-8 -bottom-8 z-[-1]">
+            <span class="hidden md:block absolute -left-8 -bottom-8 z-[-1]">
               <svg
                 width="93"
                 height="93"
@@ -229,18 +229,18 @@
 
           <div class="my-10 mx-10 max-w-full wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
             <h1 class=" text-gray-700 capitalize text-2xl md:my-5 text-center md:text-left ">About us</h1>
-            <h1 class="text-cyan-900 text-2xl text-justify md:text-4xl my-5 capitalize">Book your clinic appointment with an ease</h1>
-            <p class="font-light mb-3">
+            <h1 class="text-cyan-900 text-center md:text-left text-xl md:text-2xl md:text-left md:text-3xl my-5 capitalize">Book your clinic appointment with an ease</h1>
+            <p class="font-light mb-3 text-justify">
               A feature rich and comprehensive medical appointment scheduling software solution to deliver fast and reliable appointment booking experience to patients.
             </p>
-            <ol class="flex justify-between md:items-center  list-disc   font-bold text-xs">
-              <li> Emergency Help</li>
-              <li>Qualified Doctors</li>
-              <li>Best Professionals</li>
-              <li>Medical Treatment</li>
+            <ol class="flex flex-col mx-5  md:flex-row md:justify-between md:items-center  list-disc   font-bold text-xs">
+              <li class="mb-2  " > Emergency Help</li>
+              <li class="mb-2 " >Qualified Doctors</li>
+              <li class="mb-2 " >Best Professionals</li>
+              <li class="mb-2 " >Medical Treatment</li>
             </ol>
             <div class="flex items-end md:justify-start sm:justify-center mt-10">
-              <a href="#contact" class="  md:block font-semibold p-3 px-6 text-white  rounded-full shadow-md hover:bg-transparent hover:border border-cyan-700 hover:text-cyan-700 baseline bg-cyan-700">Contact Us</a>
+              <a href="./website/contact.html" class="  md:block font-semibold p-3 px-6 text-white  rounded-full shadow-md hover:bg-transparent hover:border border-cyan-700 hover:text-cyan-700 baseline bg-cyan-700">Contact Us</a>
             </div>
           </div>
          
@@ -342,70 +342,6 @@
        
     </section>
     <!-- doctor -->
-
- 
-   <!-- services -->
-    <!-- <section class="services">
-	  <div class="container">
-      <div class="flex flex-col  p-5 items-center mx-auto">
-        <h1 class="text-center text-xl pt-7  ">Services</h1>
-        <p class="text-center text-3xl md:text-4xl mt-5 text-cyan-900">
-          We Cover A Big Variety Of Medical Services
-        </p>
-        <p class="text-center font-light mt-10">
-          We provide the special tips and advice’s of heath care treatment and high level of best.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="customers-testimonials" class="owl-carousel">
-
-            
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="./img/infycare1.jpeg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">EMILIANO AQUILANI</div>
-            </div>
-          
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="./img/infycare2.jpeg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">ANNA ITURBE</div>
-            </div>
-          
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="./img/infycare3.jpeg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">LARA ATKINSON</div>
-            </div>
-          
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">IAN OWEN</div>
-            </div>
-          
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">MICHAEL TEDDY</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section> -->
-   <!-- services -->
 
    <!-- testimonials-->
    <div class="flex flex-col  p-5 items-center mx-auto">
@@ -509,23 +445,21 @@
         <div>
             <h1  class="text-white text-2xl md:text-3xl my-5 text-center font-semibold">Book An Appointment</h1>
             <div class="container mx-auto px-4">
-              <form class="bg-transparent  md:px-8 pt-6 pb-8 mb-4 " >
+              <form class="bg-transparent  md:px-8 pt-6 pb-8 mb-4 " method="post" onclick="AppointementMail()">
                     <div class="mb-4 ">
                       <div class="flex justify-between">
                         <div class="w-1/2 pr-2">
                           <label class="block text-white font-bold mb-2" for="last-name">
                             First Name
                           </label>
-                          <!-- <input class="appearance-none border rounded-sm w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="first-name" type="text" placeholder="First Name"> -->
-                          <input type="text"  id="firstname" name="firstname" class="block mt-1 py-4  px-4  w-full text-sm   bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" placeholder="First Name " required />
+                          <input  type="text"  id="firstname" name="firstname" class="block mt-1 py-4  px-4  w-full text-sm   bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" placeholder="First Name " required />
 
                         </div>
                         <div class="w-1/2 pl-2">
                           <label class="block text-white font-bold mb-2" for="last-name">
                             Last Name
                           </label>
-                          <!-- <input class="appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="last-name" type="text" placeholder="Doe"> -->
-                          <input type="text" id="lastname" name="lastname"  class="block mt-1 py-4  px-4  w-full text-sm   bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" placeholder="First Name " required />
+                          <input  type="text" id="lastname" name="lastname"  class="block mt-1 py-4  px-4  w-full text-sm   bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" placeholder="First Name " required />
 
                         </div>
                       </div>
@@ -534,8 +468,7 @@
                       <label class="block text-white font-bold mb-2" for="email">
                         Email
                       </label>
-                      <!-- <input class="appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="johndoe@example.com"> -->
-                      <input type="email" name="email" id="email" class="block mt-1 py-4  px-4  w-full text-sm   bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" placeholder="First Name " required />
+                      <input  type="email" name="email" id="email" class="block mt-1 py-4  px-4  w-full text-sm   bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" placeholder="First Name " required />
 
                     </div>
                     
@@ -546,7 +479,6 @@
                             Doctor
                           </label>
                           <select id="doctor"  name="doctor" class="block mt-1 py-4  px-4  w-full text-sm text-gray-400  bg-transparent border  border-gray-300 rounded-md appearance-none  focus:outline-none focus:ring-0 focus:border-white  peer focus:border-2" id="select">
-                            <!-- <option selected disabled></option> -->
                             <option>Dr.Teddy Thomas</option>
                             <option>Dr.Smith Franky</option>
                           </select>
@@ -559,11 +491,8 @@
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="flex items-end md:justify-center sm:justify-center mt-10">
-                      <button type="submit" class="  md:block font-semibold  p-3 px-6 text-cyan-900   rounded-full  hover:shadow-lg  baseline bg-white">Make appointement</button>
-                    </div> -->
                     <div class="flex justify-center sm:justify-center mt-10">
-                      <button type="button" onclick="AppointementMail()" class="   font-semibold py-3 px-4  text-cyan-800  rounded-full shadow-md  hover:shadow-lg baseline bg-white transform transition duration-500 hover:scale-110 ">Appointement Now</button>
+                      <button type="submit"  class="   font-semibold py-3 px-4  text-cyan-800  rounded-full shadow-md  hover:shadow-lg baseline bg-white transform transition duration-500 hover:scale-110 ">Appointement Now</button>
                     </div>
 
               </form>
@@ -650,10 +579,10 @@
 <footer class="bg-white pt-10 dark:bg-cyan-900">
   <div class="mx-8 ">
       
-        <div class="grid grid-cols-2   gap-1 sm:grid-cols-3 md:mx-auto">
+        <div class="grid grid-col-1 md:grid-cols-3    sm:grid-col-3">
           <!-- contact us -->
-          <div class="">
-            <h2 class="mb-6 text-sm md:font-semibold text-gray-900  uppercase dark:text-white">Contact us</h2>
+          <div class="mb-6 ">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900  uppercase dark:text-white">Contact us</h2>
             <ul class="text-gray-600 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                     <i class="fas fa-solid fa-phone text-xl text-white px-2 py-1  md:mr-2 rounded-md bg-transparent border border-white "></i>
@@ -671,7 +600,7 @@
             </ul>
           </div>
           
-        <div>
+        <div class="">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
             <ul class="text-gray-600 space-y-4 dark:text-gray-400 font-medium">
                 <li>
@@ -692,15 +621,15 @@
         <div class="">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 mt-5 md:mt-0 uppercase dark:text-white">Subscribe</h2>
             <div class="flex items-stretch mt-5 ">
-              <input  id="email"  type="email" name="email" class="bg-gray-100 rounded-lg rounded-r-none text-base leading-none p-3 text-gray-800 sm:w-28 md:w-auto  border border-transparent focus:outline-none focus:border-gray-500"  placeholder="Your Email" />
-              <button onclick="Subscriber()"  class="w-28 rounded-l-none hover:bg-cyan-600 bg-cyan-700 rounded text-base font-medium leading-none text-white p-2 capitalize focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500">subscribe</button>
+              <input   id="email"  type="email" name="email" class="bg-gray-100 rounded-lg rounded-r-none text-base leading-none p-2 w-36 md:p-3 text-gray-800  md:w-auto  border border-transparent focus:outline-none focus:border-gray-500"  placeholder="Your Email" />
+              <button onclick="Subscriber()"  class="w-24 md:w-28 rounded-l-none hover:bg-cyan-600 bg-cyan-700 rounded text-base font-medium leading-none text-white p-2 capitalize focus:outline-none focus:ring-2  focus:ring-cyan-500">subscribe</button>
             </div>
         </div>
         </div>
     </div>
     <hr class="mt-6  border-gray-200 sm:mx-auto dark:border-gray-400 lg:my-4" />
-    <div class="sm:flex  sm:items-center sm:justify-between md:mx-8 ">
-        <span class="text-sm  text-gray-500 text-left md:text-center  dark:text-gray-400">© 2023 <a href="#home" class="hover:underline">WeCare</a>. All Rights Reserved.
+    <div class="sm:flex  sm:items-center sm:justify-between mx-8 ">
+        <span class="text-sm  text-gray-500  text-left md:text-center  dark:text-gray-400">© 2023 <a href="#home" class="hover:underline">WeCare</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 md:space-x-6 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
